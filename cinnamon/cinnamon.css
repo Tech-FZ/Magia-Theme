@@ -1,0 +1,139 @@
+/*
+MAGIA THEME
+
+Created by: Nicolas Lucien
+Requires Cinnamon 3.2 or later
+*/
+
+/*
+MENU
+*/
+
+#menu {
+    color: #c0a3bf;
+    background-color: rgba(36, 31, 73, 0.3);
+}
+
+.menu-background {
+    background-color: #722664;
+    color: #c0a3bf;
+}
+
+.menu {
+    border-radius: 6px;
+    background-color: #722664;
+    border-width: 2px;
+    border-color: #241f49;
+    color: #c0a3bf;
+    min-width: 100px;
+}
+
+.popup-menu-content {
+    padding: .5em 1px;
+    color: #c0a3bf;
+}
+
+.popup-menu-icon {
+    icon-size: 16px;
+    color: #c0a3bf;
+}
+
+/*
+PANEL
+*/
+
+#panel {
+    color: #c0a3bf;
+    background-color: #241f49;
+}
+
+/*
+WINDOWS
+*/
+
+.window-frame {
+    border: 1px solid #946645;
+    /* Window border color and width */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.window-title {
+    background-color: #722664;
+    /* Title bar background color */
+    color: #c0a3bf;
+    /* Title bar text color */
+    padding: 5px;
+    /* Space around the text */
+}
+
+.window-button {
+    background-color: #444444;
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 3px;
+    /* Rounded corners */
+}
+
+.window-button:hover {
+    background-color: #666666;
+    /* Button background color on hover */
+}
+
+.window-thumbnail {
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #722664;
+    color: #c0a3bf;
+}
+
+/*
+ACTIVE WINDOW
+*/
+
+.window-frame:active {
+    border: 1px solid #946645;
+    /* Window border color and width for active window */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.window-frame:active .window-title {
+    background-color: #241f49;
+    /* Title bar background color for active window */
+    color: #722664;
+    /* Title bar text color for active window */
+    border-bottom: 2px solid #722664;
+    /* Bottom border for a visual cue */
+}
+
+.window-frame:active .window-button {
+    background-color: #241f49;
+    /* Button background color for active window */
+    color: #ffffff;
+    /* Button text color for active window */
+}
+
+.window-frame:active .window-button:hover {
+    background-color: #946645;
+    /* Button background color on hover for active window */
+}
+
+/*
+TOOLTIP
+*/
+
+#Tooltip {
+    padding: 6px 8px;
+    color: #c0a3bf;
+    background-color: #722664;
+    font-size: 12px;
+    font-weight: normal;
+    font-weight: bold;
+    text-align: center;
+    spacing: .3em;
+}
