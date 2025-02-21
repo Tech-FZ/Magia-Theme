@@ -137,3 +137,13 @@ TOOLTIP
     text-align: center;
     spacing: .3em;
 }
+
+/*
+CLOCK DESKLET
+*/
+
+.clock-desklet-label {
+    padding: 10px;
+    color: #c0a3bf;
+    background-color: #722664;
+}
