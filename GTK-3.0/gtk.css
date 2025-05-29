@@ -2,3 +2,8 @@
     color: #c0a3bf;
     background-color: #241f49;
 }
+
+.titlebar {
+    background: linear-gradient(to right, #241f49, #722664);
+    color: #c0a3bf;
+}

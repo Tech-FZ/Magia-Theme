@@ -1,0 +1,9 @@
+<frame_geometry name="normal" title_height="28"/>
+
+<draw_ops name="titlebar_bg">
+    <rectangle color="#241f49" x="0" y="0" width="width" height="height" />
+</draw_ops>
+
+<draw_ops name="titlebar_bg_unfocused">
+    <rectangle color="#722664" x="0" y="0" width="width" height="height" />
+</draw_ops>
