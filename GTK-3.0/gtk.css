@@ -4,6 +4,10 @@
 }
 
 .titlebar {
-    background: linear-gradient(to right, #241f49, #722664);
-    color: #c0a3bf;
+    background: #241f49 !important;
+    color: #c0a3bf !important;
+}
+
+.titlebar:backdrop {
+    background: #722664 !important;
 }
