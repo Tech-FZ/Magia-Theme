@@ -2,6 +2,7 @@
 
 - Inserted info into metacity file.
 - Created and used some constants.
+- Tried to make Alt-Tab look good (I failed.).
 
 # Magia Theme 2025.5.0.1
 

@@ -147,3 +147,102 @@ CLOCK DESKLET
     color: #c0a3bf;
     background-color: #722664;
 }
+
+/*
+ALT-TAB DIALOG
+*/
+
+/* Main Alt-Tab container (background, border, shadow) */
+.alt-tab-switcher {
+    background: #241f49;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Individual window thumbnails */
+/* .alt-tab-app {
+    spacing: 8px;
+    padding: 8px;
+}
+
+/* Selected window highlight
+.alt-tab-app:focus {
+    background: #722664;
+    border-radius: 6px;
+}
+
+/* Window preview thumbnail
+.alt-tab-app-icon {
+    width: 64px;
+    height: 64px;
+}
+
+/* Window title
+.alt-tab-app-label {
+    font-size: 10pt;
+    color: #c0a3bf;
+    max-width: 150px;
+    text-align: center;
+} */
+
+/* .switcher-popup {
+    background-color: #241f49;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect
+    padding: 12px; /* Spacing inside
+} */
+
+/* .switcher-list-item-container:selected {
+    background-color: #722664;
+    border-radius: 5px;
+} */
+
+/* .switcher-list-item {
+    spacing: 8px; /* Space between icon and text
+    padding: 8px; /* Inner padding
+}
+
+/* App icon size
+.switcher-list-item-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.switcher-list-item:selected {
+    background-color: #722664; /* Purple highlight
+    border-radius: 6px; /* Rounded corners for selection
+}
+
+.switcher-list-item-title {
+    font-size: 10pt;
+    color: #c0a3bf;
+    max-width: 150px; /* Prevent long titles from breaking layout
+    text-align: center;
+} */
+
+/* Main container */
+.switcher-popup {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-radius: 12px !important;
+    border: 2px solid #3a6bc9 !important;
+}
+
+/* App thumbnails */
+.switcher-list-item-container {
+    spacing: 12px !important;
+    padding: 8px !important;
+}
+
+/* Selected window */
+.switcher-list-item-container:selected {
+    background: rgba(58, 107, 201, 0.5) !important;
+    border-radius: 8px !important;
+}
+
+/* Window title */
+.switcher-list-item-title {
+    color: white !important;
+    font-size: 12pt !important;
+}
