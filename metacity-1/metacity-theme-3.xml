@@ -8,12 +8,14 @@
 	<description>Magia Theme</description>
 </info>
 
+<constant name="C_window_bg_colour_focused" value="gtk:custom(wm_bg_focused,#241f49)" >
+
 <frame_geometry name="normal" title_height="28"/>
 
-<draw_ops name="titlebar_bg">
-    <rectangle color="#241f49" x="0" y="0" width="width" height="height" />
+<draw_ops name="entire_background_focused">
+    <rectangle color="C_" x="0" y="0" width="width" height="height" />
 </draw_ops>
 
-<draw_ops name="titlebar_bg_unfocused">
+<draw_ops name="entire_background_unfocused">
     <rectangle color="#722664" x="0" y="0" width="width" height="height" />
 </draw_ops>
