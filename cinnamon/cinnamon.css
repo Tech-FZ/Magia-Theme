@@ -152,97 +152,98 @@ CLOCK DESKLET
 ALT-TAB DIALOG
 */
 
-/* Main Alt-Tab container (background, border, shadow) */
-.alt-tab-switcher {
-    background: #241f49;
-    border: 1px solid #000000;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Individual window thumbnails */
-/* .alt-tab-app {
-    spacing: 8px;
+#altTabPopup {
     padding: 8px;
+    spacing: 16px;
 }
 
-/* Selected window highlight
-.alt-tab-app:focus {
-    background: #722664;
-    border-radius: 6px;
-}
-
-/* Window preview thumbnail
-.alt-tab-app-icon {
-    width: 64px;
-    height: 64px;
-}
-
-/* Window title
-.alt-tab-app-label {
-    font-size: 10pt;
+.switcher-list {
+    background-gradient-direction: vertical;
+    background-gradient-start: #722664;
+    background-gradient-end: #241f49;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 11pt;
     color: #c0a3bf;
-    max-width: 150px;
-    text-align: center;
-} */
-
-/* .switcher-popup {
-    background-color: #241f49;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect
-    padding: 12px; /* Spacing inside
-} */
-
-/* .switcher-list-item-container:selected {
-    background-color: #722664;
-    border-radius: 5px;
-} */
-
-/* .switcher-list-item {
-    spacing: 8px; /* Space between icon and text
-    padding: 8px; /* Inner padding
+    box-shadow: 0px 0px 12px 6px rgba(0,0,0,1);
 }
 
-/* App icon size
-.switcher-list-item-icon {
-    width: 64px;
-    height: 64px;
-}
-
-.switcher-list-item:selected {
-    background-color: #722664; /* Purple highlight
-    border-radius: 6px; /* Rounded corners for selection
-}
-
-.switcher-list-item-title {
-    font-size: 10pt;
-    color: #c0a3bf;
-    max-width: 150px; /* Prevent long titles from breaking layout
-    text-align: center;
-} */
-
-/* Main container */
-.switcher-popup {
-    background: rgba(0, 0, 0, 0.9) !important;
-    border-radius: 12px !important;
-    border: 2px solid #3a6bc9 !important;
-}
-
-/* App thumbnails */
 .switcher-list-item-container {
-    spacing: 12px !important;
-    padding: 8px !important;
+    spacing: 8px;
 }
 
-/* Selected window */
-.switcher-list-item-container:selected {
-    background: rgba(58, 107, 201, 0.5) !important;
-    border-radius: 8px !important;
+.thumbnail-scroll-gradient-left {
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(51, 51, 51, 1.0);
+    background-gradient-end: rgba(51, 51, 51, 0);
+    border-radius: 24px;
+    border-radius-topright: 0px;
+    border-radius-bottomright: 0px;
+    width: 60px;
 }
 
-/* Window title */
-.switcher-list-item-title {
-    color: white !important;
-    font-size: 12pt !important;
+.thumbnail-scroll-gradient-right {
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(51, 51, 51, 0);
+    background-gradient-end: rgba(51, 51, 51, 1.0);
+    border-radius: 24px;
+    border-radius-topleft: 0px;
+    border-radius-bottomleft: 0px;
+    width: 60px;
+}
+
+.switcher-list .item-box {
+    padding: 8px;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 8px;
+}
+
+.switcher-list .item-box:outlined {
+    padding: 6px;
+    border: 2px solid rgba(85,85,85,1.0);
+}
+
+.switcher-list .item-box:selected {
+    background-gradient-direction: horizontal;
+    background-gradient-start: #72263e;
+    background-gradient-end: #5a2672;
+    border: 1px solid rgba(120,120,120,1);
+}
+
+.switcher-list .thumbnail-box {
+    padding: 2px;
+    spacing: 4px;
+}
+
+.switcher-list .thumbnail {
+    width:  256px;
+}
+
+.switcher-list .separator {
+    width: 1px;
+    background: rgba(255,255,255,0.33);
+}
+
+.ripple-box {
+    width: 104px;
+    height: 104px;
+    background-image: url("corner-ripple.png");
+}
+
+.ripple-box:rtl {
+    background-image: url("corner-ripple.png");
+}
+
+.switcher-arrow {
+    border-color: rgba(0,0,0,0);
+    color: #808080;
+}
+
+.switcher-arrow:highlighted {
+    border-color: rgba(0,0,0,0);
+    color: white;
+}
+
+.switcher-preview-backdrop {
+   background-color: rgba(25,25,25,0.65);
 }
