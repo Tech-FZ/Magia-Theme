@@ -8,14 +8,87 @@
 	<description>Magia Theme</description>
 </info>
 
-<constant name="C_window_bg_colour_focused" value="gtk:custom(wm_bg_focused,#241f49)" >
+<!-- meaningful constants -->
+
+<constant name="C_title_focused" value="rgba(36, 31, 73, 1)" >
+<constant name="C_title_unfocused" value="rgba(114, 38, 100, 1)" >
+
+<constant name="C_wm_bg_focused" value="rgba(36, 31, 73, 1)" />
+<constant name="C_wm_bg_unfocused" value="rgba(114, 38, 100, 1)" />
+
+<constant name="C_wm_border" value="rgba(20,20,20,0.3)" />
+
+<constant name="C_wm_highlight" value="rgba(55,55,55,1.0)" />
 
 <frame_geometry name="normal" title_height="28"/>
 
+<!-- title -->
+
+<draw_ops name="title_focused">
+
+	<title version="< 3.1"
+               x="(0 `max` ((width - title_width) / 2))"
+               y="(0 `max` ((height - title_height) / 2)) + 1"
+               color="C_title_focused" />
+	<title version=">= 3.1"
+               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
+               y="(0 `max` ((height - title_height) / 2)) + 1"
+               ellipsize_width="width"
+               color="C_title_focused" />
+</draw_ops>
+
+<draw_ops name="title_unfocused">
+	<title version="< 3.1"
+               x="(0 `max` ((width - title_width) / 2))"
+               y="(0 `max` ((height - title_height) / 2)) + 1"
+               color="C_title_unfocused" />
+	<title version=">= 3.1"
+               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
+               y="(0 `max` ((height - title_height) / 2)) + 1"
+               ellipsize_width="width"
+               color="C_title_unfocused" />
+</draw_ops>
+
+	<!-- window decorations -->
+
 <draw_ops name="entire_background_focused">
-    <rectangle color="C_" x="0" y="0" width="width" height="height" />
+	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
-    <rectangle color="#722664" x="0" y="0" width="width" height="height" />
+	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="true" />
+</draw_ops>
+
+<draw_ops name="titlebar_focused">
+	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
+</draw_ops>
+
+<draw_ops name="titlebar_unfocused">
+	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
+</draw_ops>
+
+<draw_ops name="titlebar_max">
+
+</draw_ops>
+
+<draw_ops name="titlebar_small_focused">
+
+</draw_ops>
+
+<draw_ops name="titlebar_small_unfocused">
+
+</draw_ops>
+
+<draw_ops name="border_focused">
+	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="false" />
+</draw_ops>
+
+<draw_ops name="border_unfocused">
+	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="false" />
+</draw_ops>
+
+<draw_ops name="border_max">
+	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
 </draw_ops>

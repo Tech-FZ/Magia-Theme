@@ -1,3 +1,7 @@
+# Magia Theme 2025.6.0.3
+
+- Tried to decorate windows (and failed).
+
 # Magia Theme 2025.6.0.2
 
 - Inserted info into metacity file.
