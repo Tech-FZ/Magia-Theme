@@ -1,3 +1,7 @@
+# Magia Theme 2025.7.0.4
+
+- Tried to decorate multiple things (and failed yet again).
+
 # Magia Theme 2025.6.0.3
 
 - Tried to decorate windows (and failed).

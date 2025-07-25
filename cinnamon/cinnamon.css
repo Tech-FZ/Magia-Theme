@@ -91,6 +91,22 @@ WINDOWS
     color: #c0a3bf;
 }
 
+.window-caption {
+  -cinnamon-caption-spacing: 12px;
+  spacing: 25px;
+  padding: 7px 8px 8px;
+  border-radius: 2px;
+  color: #c0a3bf;
+  background-color: #722664;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+.window-caption#selected, .window-caption:focus {
+  spacing: 25px;
+  color: #c0a3bf;
+  background-color: #722664;
+  box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34);
+}
+
 /*
 ACTIVE WINDOW
 */
@@ -246,4 +262,63 @@ ALT-TAB DIALOG
 
 .switcher-preview-backdrop {
    background-color: rgba(25,25,25,0.65);
+}
+
+/*
+WINDOW LIST BOX/PREVIEW
+*/
+
+.window-list-box {
+  spacing: 0;
+}
+.window-list-box .panel-top:ltr, .panel-bottom .window-list-box:ltr {
+  padding: 0 0 0 8px;
+}
+.window-list-box .panel-top:rtl, .panel-bottom .window-list-box:rtl {
+  padding: 0 8px 0 0;
+}
+.window-list-box.vertical {
+  padding: 6px 0 0 0;
+}
+.window-list-box:highlight {
+  background-color: #5a2672;
+}
+.window-list-item-box {
+  border: 0 none transparent;
+  border-image: none;
+  background-image: none;
+  background-color: #241f49;
+  color: #c0a3bf;
+  box-shadow: 0 0 transparent;
+  font-weight: 400;
+}
+.window-list-item-box:hover {
+  background-color: #5a2672;
+}
+
+.window-list-preview {
+  padding: 12px;
+  spacing: 8px;
+  border: none;
+  border-image: url("assets/misc/osd.svg") 9 9 9 9;
+  border-radius: 2px;
+  color: #c0a3bf;
+  background: #5a2672;
+}
+
+.window-list-item {
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #722664;
+    color: #c0a3bf;
+}
+
+.window-preview {
+    border: 2px solid #946645;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.window-list-item:hover {
+    background-color: #5a2672;
+    transition: background-color 0.3s ease;
 }
