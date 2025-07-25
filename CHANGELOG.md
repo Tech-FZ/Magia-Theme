@@ -1,6 +1,7 @@
 # Magia Theme 2025.7.0.4
 
 - Tried to decorate multiple things (and failed yet again).
+- At least the taskbar looks prettier
 
 # Magia Theme 2025.6.0.3
 

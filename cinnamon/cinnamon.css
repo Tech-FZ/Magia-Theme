@@ -322,3 +322,39 @@ WINDOW LIST BOX/PREVIEW
     background-color: #5a2672;
     transition: background-color 0.3s ease;
 }
+
+/*
+GROUPED WINDOW LIST
+*/
+
+.grouped-window-list-item-box {
+  font-weight: normal;
+  border-image: none;
+  transition-duration: 300;
+}
+
+.grouped-window-list-item-box:active {
+  font-weight: normal;
+  background-color: rgba(148, 102, 69, 0.5);
+  transition-duration: 300;
+}
+
+.grouped-window-list-item-box:hover {
+  background-color: #722664;
+  transition-duration: 300;
+  color: #c0a3bf;
+}
+
+.grouped-window-list-item-box:active,
+.grouped-window-list-item-box:checked,
+.grouped-window-list-item-box:focus:hover,
+.grouped-window-list-item-box:active:hover,
+.grouped-window-list-item-box:checked:hover {
+  transition-duration: 300;
+  color: #c0a3bf;
+}
+
+.grouped-window-list-item-box:focus {
+  background-color: #5a2672;
+  transition-duration: 300;
+}
