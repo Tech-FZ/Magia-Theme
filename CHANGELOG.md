@@ -1,3 +1,7 @@
+# Magia Theme 2026.1.0.5
+
+- Make notifications visible
+
 # Magia Theme 2025.7.0.4
 
 - Tried to decorate multiple things (and failed yet again).
